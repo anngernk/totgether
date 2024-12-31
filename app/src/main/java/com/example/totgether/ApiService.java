@@ -17,14 +17,15 @@ import retrofit2.http.Query;
 
 public interface ApiService {
 
-    @FormUrlEncoded
+   // @FormUrlEncoded
     //@POST("login") // Укажит путь к своему API для входа
 
     @POST("http://localhost:8080/api/auth/register")
     Call<LoginResponse> login(@Body LoginRequest loginRequest);
-    @FormUrlEncoded
-    @POST("http://localhost:8080/api/auth/register")
-    Call<ResponseBody> registerUser(@Field("username") String username, @Field("password") String password);
+   // @FormUrlEncoded
+//    @POST("http://localhost:8080/api/auth/register")
+    @POST("api/auth/register")//!
+    Call<ResponseBody> registerUser(@Body LoginRequest loginRequest );
 
     @GET("patients") // Make sure this path is correct
     Call<List<Patient>> getPatientsByDate(@Query("date") String date);

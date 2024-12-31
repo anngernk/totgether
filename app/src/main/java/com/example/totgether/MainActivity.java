@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         // Используем лямбда-выражение для сокращения кода
         new Handler().postDelayed(() -> {
             Log.d(TAG, "Transitioning to LoginActivity");
+
             startActivity(new Intent(MainActivity.this, LoginActivity.class));
             finish(); // Закрыть MainActivity
         }, DELAY_MILLIS);

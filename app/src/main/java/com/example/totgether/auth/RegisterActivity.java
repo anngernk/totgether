@@ -1,6 +1,7 @@
 package com.example.totgether.auth;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -52,7 +53,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void registerUser(String login, String password) {
         ApiService apiService = ApiClient.getApiService();
-        Call<ResponseBody> call = apiService.registerUser(login, password);
+        Log.i("RegisterActivity","end point called");
+        Call<ResponseBody> call = apiService.registerUser(new LoginRequest(login,password));
 
         call.enqueue(new Callback<ResponseBody>() {
             @Override
@@ -70,6 +72,7 @@ public class RegisterActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
+                Log.i("RegisterActivity", t.getMessage());
                 Toast.makeText(RegisterActivity.this, "Ошибка: " + t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });

@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
     private void loginUser(String email, String password) {
         new Thread(() -> {
             try {
-                URL url = new URL("jdbc:mysql://localhost:3306/totgether");
+                URL url = new URL("http://localhost:8080");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("POST");
                 conn.setDoOutput(true);
