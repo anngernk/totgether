@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/editTextPatientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotolight"
+
+        android:hint="Имя пациента" />
+
+    <EditText
+        android:id="@+id/editTextPatientTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotolight"
+        android:hint="Время" />
+
+    <EditText
+        android:id="@+id/editTextPatientRoom"
+        android:fontFamily="@font/robotolight"
+        android:backgroundTint="@color/colorStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Кабинет" />
+
+    <Button
+        android:id="@+id/buttonAddPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorStart"
+        android:text="Добавить пациента" />
+</LinearLayout>

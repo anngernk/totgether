@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "553329310927",
+    "project_id": "totgether-8c029",
+    "storage_bucket": "totgether-8c029.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553329310927:android:3b2101bc71d0d6ec1dcbba",
+        "android_client_info": {
+          "package_name": "com.example.totgether"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553329310927-dr7aj3ub8eajio0vbderkt4k47r73fgm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.totgether",
+            "certificate_hash": "ad5632c2c1821ca95632c62f428434349eac8c4c"
+          }
+        },
+        {
+          "client_id": "553329310927-cphf03kmr3s7sc590mb0sg2t1qni0n61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK3ldZagoUlGblnILjVnibPzkmPfcBZpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553329310927-cphf03kmr3s7sc590mb0sg2t1qni0n61.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
