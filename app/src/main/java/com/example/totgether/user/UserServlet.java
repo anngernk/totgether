@@ -1,4 +1,4 @@
-package com.example.totgether;
+package com.example.totgether.user;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
