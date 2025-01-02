@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <TextView
+        android:id="@+id/patientNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ирина Нестеревич"
+        android:textSize="24sp"
+        android:textColor="#000"
+
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/appointmentDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дата:13 февраля, 16:00 "
+        android:textSize="16sp"
+        android:textColor="#666"
+        app:layout_constraintTop_toBottomOf="@id/patientNameText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        />
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Адрес: ЛЮДО, пр. Независимости 14"
+        android:textSize="16sp"
+        android:textColor="#666"
+        app:layout_constraintTop_toBottomOf="@id/appointmentDateText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        />
+
+    <TextView
+        android:id="@+id/reasonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Причина: Боли в желудке, ребенок пл. остатков"
+        android:textSize="16sp"
+        android:textColor="#666"
+        app:layout_constraintTop_toBottomOf="@id/addressText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        />
+
+    <TextView
+        android:id="@+id/childCardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Карточка ребенка: Миша 3 года"
+        android:textSize="16sp"
+        android:textColor="#666"
+        app:layout_constraintTop_toBottomOf="@id/reasonText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        />
+
+    <Button
+        android:id="@+id/writePatientButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Написать пациенту"
+        android:textColor="@android:color/white"
+
+
+        android:background="@color/colorStart"
+        app:layout_constraintTop_toBottomOf="@id/childCardText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:padding="12dp"/>
+
+    <Button
+        android:id="@+id/cancelAppointmentButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Отменить прием"
+
+        android:textColor="@android:color/white"
+        android:backgroundTint="#F44336"
+        app:layout_constraintTop_toBottomOf="@id/writePatientButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
